@@ -1,3 +1,5 @@
 # The Bug Fix Manifesto
 
-The right way of fixing software (and not only) bugs
+[http://krasimir.github.io/TheBugFixManifesto/](http://krasimir.github.io/TheBugFixManifesto/)
+
+The right way of fixing software (and not only) bugs.
