@@ -15,7 +15,8 @@
 
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     
   </head>
   <body>
@@ -30,13 +31,68 @@
 
         <p><small class="center">The purpose of this document is promoting good practices during the process of bug fixing. Have in mind that you may have different workflow and not all advices apply to your job.</small></p>
 
+        <p class="icon"><i class="fa fa-suitcase"></i></p>
+
         <h2>The preparation</h2>
 
-        <p>The bug, the problem, in your system should be document. It should be described somewhere. No matter if you are the developer that will work on it or the tester that found it. Create a ticket, issue, card, or whatever you use for managing your projects. Don't rely on your instant messenger for bug reporting. The email is a little bit better but still not the right place for such tasks.</p>
+        <p>The bug, the problem, in your system should be document. It should be described somewhere. No matter if you are the developer that will work on it or the tester that found it. Create a ticket, issue, card, or whatever you use for managing your projects. Don't rely on your instant messenger for bug reporting. Emailing is a little bit better but still not the right way to go.</p>
 
-        <p>Here are few things that you have to include in your report:</p>
+        <p class="no-pad">
+          Here are few things that you have to include in your report:
+        </p>
+
+        <ul>
+          <li><i class="fa fa-check"></i> What exactly (you think) is the problem. Please be as detailed as possible. Description containing only one sentence saying <i>"The product's page is broken!"</i> does not help.</li>
+          <li><i class="fa fa-check"></i> Write down how (you think) the software should look/behave. It is possible that you don't actually know that and something reported as a bug may be a working feature.</li>
+          <li><i class="fa fa-check"></i> Include <i>steps to reproduce</i> section. The ability of reproducing the bug quickly is in the essence of the issue solving.</li>
+          <li><i class="fa fa-check"></i> In the end, guide the developer (if possible) how to fix the bug. If you for example know what part of the system is responsible you better mention it.</li>
+        </ul>
+
+        <p class="icon mar-top"><i class="fa fa-bug"></i></p>
+
+        <h2>Get the things done</h2>
+
+        <p>Now you have a really nice bug report and can't wait to start working. Check out the steps below to make sure that you are on the right track.</p>
+
+        <ul>
+          <li><i class="fa fa-check"></i> Never make code changes before understanding what exactly the issue is. That's just a waste of time. Invest as much time as needed for finding the real problem.</li>
+          <li><i class="fa fa-check"></i> It will be nice if you reproduce the bug with an automated test. Especially in web development. You don't want spending half of your time in the browser filling forms and clicking links.</li>
+          <li><i class="fa fa-check"></i> Think of the best solution possible. Plan the changes and if possible discuss them with the team.</li>
+          <li><i class="fa fa-check"></i> And finally do the job. Fix it!</li>
+          <li><i class="fa fa-check"></i> Look back and refactor your code. For sure you missed something.</li>
+        </ul>
+
+        <p class="icon mar-top"><i class="fa fa-flag-checkered"></i></p>
+
+        <h2>Finish line</h2>
+
+        <p>When everything ends and you are proud of yourself take some time to document your work. It takes just a few minutes but it matters to the reviewers. While submitting your changes list the following:</p>
+
+        <ul>
+          <li><i class="fa fa-check"></i> A link to the ticket/issue/card in your project management system (if you use one).</li>
+          <li><i class="fa fa-check"></i> Explain briefly what problem your fix solves.</li>
+          <li><i class="fa fa-check"></i> Explain your solution. What parts you changed and why.</li>
+          <li><i class="fa fa-check"></i> Write down steps for reproducing the problem.</li>
+          <li><i class="fa fa-check"></i> Write down steps for seeing the solution.</li>
+        </ul>
+
+        <p class="icon mar-top"><i class="fa fa-smile-o"></i></p>
+
+        <h2>Happy bug fixing</h2>
 
       </section>
+
+      <footer>
+        <p><a href="http://krasimirtsonev.com/" target="_blank">
+          <i class="fa fa-angle-right"></i> About the author
+        </a></p>
+        <p><a href="https://github.com/krasimir/TheBugFixManifesto" target="_blank">
+          <i class="fa fa-angle-right"></i> Contribute in GitHub
+        </a></p>
+        <p>
+          <a href="https://twitter.com/share?url=http://thebugfixmanifesto.dev/&text=The+Bug+Fix+Manifesto&via=KrasimirTsonev"><i class="fa fa-twitter"></i> Share in Twitter</a>
+        </p>
+      </footer>
 
     </div>
 

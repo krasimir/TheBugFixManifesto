@@ -5,14 +5,17 @@ html, body {
   margin: 0;
   font-size: 18px;
   background: #FFFAD7;
-  color: #030011;
+  background-color: hsl(2, 57%, 40%);
+  background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+  repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+  repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
 }
 .container {
   overflow: hidden;
 }
 header {
   text-align: center;
-  padding: 6em 0 10em 0;
+  padding: 6em 0 13em 0;
 }
 @media all and (max-width: 480px) {
   header {
@@ -27,6 +30,7 @@ h1 {
   font-family: 'Pacifico', cursive;
   position: relative;
   display: inline-block;
+  color: #FFF;
 }
 h1 small {
   display: block;
@@ -43,10 +47,10 @@ h1 small {
   }
 }
 section {
-  background: #80D0D2;
+  background: #EAEBCA;
   position: relative;
   padding: 5em 4em 4em 4em;
-  color: #1B5A7A;
+  color: #501716;
 }
 @media all and (max-width: 400px) {
   section {
@@ -55,22 +59,37 @@ section {
   }
 }
 section::before {
-  border-top: solid 1em #CECAAF;
   position: absolute;
   top: 0;
   left: -25%;
   display: block;
   content: '';
   width: 150%;
-  height: 5em;
-  background: #80D0D2;
-  -webkit-transform: rotate(-2deg);
-  transform: rotate(-2deg);
+  height: 6em;
+  background: #A02F2C;
+  z-index: 0;
+  -webkit-transform: rotate(-3.2deg);
+  transform: rotate(-3.2deg);
   -webkit-transform-origin: 3% 0;
   transform-origin: 3% 0;
   box-sizing: border-box;
 }
-section p {
+section::after {
+  position: absolute;
+  top: 0;
+  left: -25%;
+  display: block;
+  content: '';
+  width: 150%;
+  height: 6em;
+  background: #EAEBCA;
+  -webkit-transform: rotate(-1.8deg);
+  transform: rotate(-1.8deg);
+  -webkit-transform-origin: 3% 0;
+  transform-origin: 3% 0;
+  box-sizing: border-box;
+}
+section p, footer p {
   padding: 0 0 2em 0;
   margin: 0;
   max-width: 600px;
@@ -79,10 +98,21 @@ section p {
   font-size: 1.4em;
   line-height: 1.4em;
 }
+section p.no-pad {
+  padding: 0 0 0.4em 0;
+}
+section p.mar-top {
+  margin: 1em auto 0 auto;
+}
 section p small.center {
   display: block;
   font-style: italic;
   text-align: center;
+}
+section p.icon {
+  font-size: 4em;
+  text-align: center;
+  padding: 0;
 }
 section h2 {
   margin: 0 0 1em 0;
@@ -96,3 +126,40 @@ section h2 {
     font-size: 2em;
   }
 }
+section ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  list-style: none;
+}
+section ul li {
+  margin: 0;
+  padding: 0 0 0.5em 0;
+}
+section ul li .fa {
+  font-size: 0.8em;
+}
+footer {
+  padding: 2em 0 2em 0;
+  background: #000;
+  color: #fff;
+}
+footer p {
+  font-size: 1em;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+footer a {
+  color: #FFF;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: line-through;
+}
+
+
