@@ -36,6 +36,4 @@ When everything is done and you are proud of yourself take some time to document
 
 ## Summary
 
-I hope that some of the advices above apply to your workflow. They work for me and really help solving bugs quickly. 
-
-The points made in this article are packed in a GitHub project called [*The Bug Fix Manifesto](http://krasimir.github.io/TheBugFixManifesto/). Feel free to contribute or/and share.
+I hope that some of the advices above apply to your workflow. They work for me and really help solving bugs quickly.
